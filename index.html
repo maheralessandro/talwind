@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <!--navbar-->
+    <header>
+        <nav class="bg-gray-100 flex justify-around flex-wrap">
+            <div class="flex items-center">
+                <img width="50px" src="https://img.freepik.com/vecteurs-premium/vecteur-gratuit-bel-element-conception-colibri-volant-pour-bannieres-affiches-depliants-brochures_1009653-1.jpg" alt="logo">
+                <h2 class="text-lg italic font-extrabold">portfolio</h2>
+            </div>
+            <div class="w-48 flex justify-around items-center">
+                <a href="#">about</a>
+                <a href="#">skills</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="w-48 flex justify-around items-center">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </nav>
+    </header>
+    <!--intro section-->
+        <div class="bg-gray-100 flex justify-around flex-wrap-reverse py-20 px-20">
+            <div>
+                <h1 class="text-2x1 truncate">Ciao</h1>
+                <h1 class="text-2x1">sono uno<strong class="text-orange-300 capitalize font-bold">studente</strong></h1>
+                <h3>sono un programmatore web</h3>
+                <p class="text-justify w-64 m-2">figura professionale che si occupa dello sviluppo di applicazioni web, in particolare dello sviluppo del codice sorgente di programmazione, dell'ottimizzazione dei database e dei linguaggi di markup attraverso tecniche di programmazione Web.</p>
+                <a class="underline text-green-900" href="#">la mia storia</a>
+            </div>
+            <div>
+                <img class="rounded-full w-64 h-64 " src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?cs=srgb&dl=pexels-mohamed-abdelghaffar-771742.jpg&fm=jpg" alt="profile">
+            </div>       
+        </div>
+    <!--skill section-->     
+    <section class="py-20 xl:pt-24 xl:pb-28 bg-white" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Pricing</span>
+          <h3 class="mb-4 text-3xl md:text-5xl text-coolGray-900 font-bold tracking-tighter">Flexible pricing plan for your startup</h3>
+          <p class="mb-12 text-lg md:text-xl text-coolGray-500 font-medium">Pricing that scales with your business immediately.</p>
+          <div class="flex flex-wrap justify-center -mx-4">
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+              <div class="flex flex-col items-center pt-10 px-8 pb-8 bg-coolGray-50 rounded-md shadow-md hover:scale-105 transition duration-500">
+                <span class="inline-block py-px px-2 mb-6 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Pricing</span>
+                <h3 class="mb-4 text-lg md:text-xl text-green-500 font-medium">Basic Plan</h3>
+                <div class="mb-4">
+                    <img class="w-20 h-20 rounded-full" alt="utml" src="data:image/png;base64,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">
+                  <!-- <span class="relative -top-6 right-1 text-2xl text-coolGray-900 font-medium">$</span>
+                  <span class="text-5xl text-coolGray-900 font-medium">10</span>
+                  <span class="text-3xl text-coolGray-900 font-medium">/mo</span> -->
+                </div>
+                <p class="mb-7 text-lg md:text-xl text-coolGray-400 font-medium">Billed annually</p>
+                <ul class="self-start mb-8">
+                  <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                    <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                    <span>Complete documentation</span>
+                  </li>
+                  <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                    <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                    <span>Working materials in Figma</span>
+                  </li>
+                  <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                    <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                    <span>100GB cloud storage</span>
+                  </li>
+                  <li class="flex items-center text-coolGray-500 font-medium">
+                    <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                    <span>500 team members</span>
+                  </li>
+                </ul>
+                <a class="inline-block py-3 px-7 w-full text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" href="#">Request a Demo</a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+              <div class="flex flex-col items-center pt-10 px-8 pb-8 bg-coolGray-50 rounded-md shadow-md hover:scale-105 transition duration-500">
+                <span class="inline-block py-px px-2 mb-6 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Pricing</span>
+                <h3 class="mb-4 text-lg md:text-xl text-green-500 font-medium">Freelancer Plan</h3>
+                <div class="mb-4">
+                    <img class="w-20 h-20 rounded-full " alt="css" src="https://code.broker/wp-content/uploads/logo-css.png">
+                  <!-- <span class="relative -top-6 right-1 text-2xl text-coolGray-900 font-medium">$</span>
+                  <span class="text-5xl text-coolGray-900 font-medium">99</span>
+                  <span class="text-3xl text-coolGray-900 font-medium">/mo</span> -->
+                </div>
+                <p class="mb-7 text-lg md:text-xl text-coolGray-400 font-medium">Billed annually</p>
+                <ul class="self-start mb-8">
+                    <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>Complete documentation</span>
+                    </li>
+                    <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>Working materials in Figma</span>
+                    </li>
+                    <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>100GB cloud storage</span>
+                    </li>
+                    <li class="flex items-center text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>500 team members</span>
+                    </li>
+                  </ul>
+                <a class="inline-block py-3 px-7 w-full text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" href="#">Request a Demo</a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+              <div class="flex flex-col items-center pt-10 px-8 pb-8 bg-coolGray-50 rounded-md shadow-md hover:scale-105 transition duration-500">
+                <span class="inline-block py-px px-2 mb-6 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl">Pricing</span>
+                <h3 class="mb-4 text-lg md:text-xl text-green-500 font-medium">Enterprise Plan</h3>
+                <div class="mb-4">
+                    <img class="w-20 h-20 rounded-full " alt="js" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png">
+                  <!-- <span class="relative -top-6 right-1 text-2xl text-coolGray-900 font-medium">$</span>
+                  <span class="text-5xl text-coolGray-900 font-medium">799</span>
+                  <span class="text-3xl text-coolGray-900 font-medium">/year</span> -->
+                </div>
+                <p class="mb-7 text-lg md:text-xl text-coolGray-400 font-medium">Billed annually</p>
+                <ul class="self-start mb-8">
+                    <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>Complete documentation</span>
+                    </li>
+                    <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>Working materials in Figma</span>
+                    </li>
+                    <li class="flex items-center mb-3 text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>100GB cloud storage</span>
+                    </li>
+                    <li class="flex items-center text-coolGray-500 font-medium">
+                      <img class="mr-3 w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Green_checkbox-checked.svg/1024px-Green_checkbox-checked.svg.png">
+                      <span>500 team members</span>
+                    </li>
+                  </ul>
+                <a class="inline-block py-3 px-7 w-full text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" href="#">Request a Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+</body>
+</html>
